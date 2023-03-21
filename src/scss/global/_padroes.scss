@@ -1,0 +1,251 @@
+// Global
+html,body {
+	background-color: #fff;
+	color: #000;
+	font-family: 'Montserrat', sans-serif; 
+	font-weight: 400; 
+	font-style: normal;
+    
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+/*img {
+
+	display: block;
+	max-width: 100%;
+}*/
+
+.owl-carousel .owl-item img{
+	max-width: 100%;
+	width: initial;
+	padding: 10px 50px !important;
+}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+//Placeholder
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+
+// Fontes
+.montserrat-regular{font-family: 'Montserrat', sans-serif; font-weight: 400; font-style: normal;}
+.montserrat-medium{font-family: 'Montserrat', sans-serif; font-weight: 500; font-style: normal;}
+.montserrat-bold{font-family: 'Montserrat', sans-serif; font-weight: 700; font-style: normal;}
+
+
+// Container
+.wrapper{ 
+	width:100%;
+	margin:0px auto;
+	z-index:9;
+	position: relative;
+	padding: 0 15px;
+}
+.wrapper-1360{ 
+	max-width: 1000px;
+    width: 100%; 
+    margin: 0px auto;
+}
+.wrapper-330{ 
+	max-width: 330px;
+    width: 100%;
+}
+
+
+// Colors
+$branco: #fff;
+$preto: #000;
+$preto-2: #292624;
+$cinza: #B0B0A8;
+$vermelho: #D60014;
+$azul: #3075A5;
+$verde: #1B946E;
+$laranja:orange;
+
+// Classes de Cores
+.branco {color: $branco;}
+.dark { color:$preto;}
+.danger { color:$vermelho;}
+.primary { color:$azul;}
+.success { color:$verde;}
+.secondary { color:$cinza;}
+.dark-2{color:$preto-2;}
+
+
+// Classes de Fontes
+
+// Classes de Tamanho de Fontes
+.fs-14 {font-size: 14px;}
+.fs-16 {font-size: 16px;}
+.fs-18 {font-size: 18px;}
+.fs-20 {font-size: 20px;}
+.fs-22 {font-size: 22px;}
+.fs-24 {font-size: 24px;}
+.fs-26 {font-size: 26px;}
+.fs-28 {font-size: 28px;}
+.fs-30 {font-size: 30px;}
+.fs-32 {font-size: 32px;}
+.fs-34 {font-size: 34px;}
+.fs-36 {font-size: 36px;}
+.fs-38 {font-size: 38px;}
+.fs-40 {font-size: 40px;}
+.fs-42 {font-size: 42px;}
+.fs-44 {font-size: 44px;}
+.fs-46 {font-size: 46px;}
+.fs-48 {font-size: 48px;}
+
+
+//Padrões dos textos
+.infos_section{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $preto-2;
+
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: bold;
+    } 
+    h3{
+        font-size: 25px;
+        font-weight: bold;
+    } 
+   /* h4, h5, h6{
+        font-size: 18px;
+        font-weight: 500;
+    }*/
+
+    strong{
+        font-weight: bold;
+    }
+}
+
+// Tamanho Buttons
+
+.btn-200{
+	max-width: 200px;
+	height: 60px;
+} 
+
+.btn-700{
+	max-width: 700px;
+	height: 60px;
+}
+
+//Media
+@media(max-width: 1440px){ 
+
+    //Padrões dos textos
+    .infos_section{
+        font-size: 16px;
+
+        h1{
+            font-size: 38px;
+        }
+        h2{ 
+            font-size: 34px;
+        } 
+
+        strong{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width: 1199px){ 
+
+    //Padrões dos textos
+    .infos_section{
+        font-size: 16px;
+
+        h1{
+            font-size: 34px;
+        }
+        h2{ 
+            font-size: 32px;
+        } 
+
+        strong{
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width: 991px){ 
+
+    //Padrões dos textos
+    .infos_section{
+        font-size: 16px;
+
+        h1{
+            font-size: 32px;
+        }
+        h2{ 
+            font-size: 30px;
+
+        } 
+
+        strong{ 
+            font-size: 15px;
+        }
+    }
+}
+
+
+@media(max-width: 767px){ 
+
+    //Padrões dos textos
+    .infos_section{
+        font-size: 14px;
+
+        h1{
+            font-size: 30px;
+        }
+        h2{ 
+            font-size: 28px;
+        } 
+
+        strong{
+            font-size: 14px;
+        }
+    }
+}
+@media(min-width: 767px){ 
+
+    .wrapper-940{
+        max-width: 460px;
+    }
+}
+
+@media(max-width: 575px){ 
+
+    //Padrões dos textos
+    .infos_section{
+        h1{
+            font-size: 28px;
+        }
+        h2{ 
+            font-size: 26px;
+            display: grid;
+        } 
+    }
+}
+

@@ -1,0 +1,239 @@
+body{
+    ._sessao_biciclemas_home{
+        background-image: url(/img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 380px ;
+
+        h1{
+            font-size: 48px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .bicicletas_box{
+            max-width: 980px;
+        }
+        ._willian_morris_box{
+            max-width: 320px;
+        }
+        cite{
+            font-weight: 700;
+            font-size: 14px;
+            font-style: normal;
+        }
+
+    }
+    ._sessao_produtos{
+        min-height: 450px;
+
+        ._box_produtos{
+        
+            max-width: 300px;
+            min-height: 300px;
+        }
+        h2{
+            color: $preto;
+        }        
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            padding-top: 15px;
+            color: $preto;
+        }
+        article{
+            display: flex;
+            justify-content: center;
+        }
+        figure{
+            min-height: 180px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            max-width: 200px;
+        }
+        p{
+            padding: 10px 20px 20px;
+        }
+    }
+    ._sessao_portifolio{
+        min-height: 500px;
+        background-color: $preto;
+        h2{
+            color: $laranja;
+        }
+    }
+    ._sessao_qualidade{
+        min-height: 500px;
+
+        h2{
+            color: $preto;
+        }
+        h3{
+            color:$preto;
+        }
+
+    }
+    ._sessao_banner_william{
+        background-image: url(/img/bg-footer.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 220px;
+
+    }
+    ._footer{
+        background-color: $preto;
+        min-height: 250px;
+        
+        i{
+            font-size: 50px;
+        }
+        h2{
+            color: #fec63e;
+            text-align: left;
+         
+        }
+        p{
+            color: $branco;
+            margin-bottom: 0px;
+        }
+        hr{
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+    .direitos_autorais{
+        background-color: $laranja;
+        min-height: 100px;
+        width: 100% !important;
+    }
+    //gerais
+    .wrapper-460{
+        max-width: 460px;
+        padding: 0px 10px 20px;
+    }
+    .wrapper-400{
+        max-width: 400px;
+    }
+    .wrapper-266{
+        max-width: 266px;
+        padding: 0px 10px 20px;
+    }
+    .wrapper-940{
+        max-width: 920px;
+        padding: 0px 10px;
+    }
+    .wrapper-330{ 
+        max-width: 321px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: 20px;
+    }
+    p{
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .btn-outline-warning3{
+        border: 3px solid #fec63e;
+        padding: 10px 30px;
+        color: #fec63e;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        transition: all .5s ease;
+        max-width: 190px;
+        background: transparent;
+        &:active, &:hover{
+            border-color: $preto;
+            background: transparent;
+            color: $preto;
+            
+            
+        }
+    }
+    .btn-outline-warning2{
+        border: 3px solid #fec63e;
+        padding: 10px 30px;
+        color: #fec63e;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 700;
+        transition: all .5s ease;
+        background: transparent;
+        max-width: 190px;
+        &:active, &:hover{
+            border-color: $branco;
+            background: transparent;
+            color: $branco;
+            
+            
+        }
+    }
+    .linha_branca{
+        border-top: 3px solid;
+        max-width: 60px;
+        color: $branco;
+        
+    }
+    .linha_preta{
+        border-top: 3px solid;
+        max-width: 60px;
+        color: $preto;
+        margin-bottom:  0px;
+        margin-top: 0px;
+    }
+    .linha_amarela{
+        border-top: 3px solid;
+        max-width: 60px;
+        color: $laranja; 
+        margin-bottom:  0px;
+        margin-top: 0px;
+    }
+    ._titulos{
+        padding-bottom: 35px;
+        padding-top: 50px;
+    }
+    @media(max-width: 921px){ 
+
+        .wrapper-940{
+            max-width: 460px;
+        }
+    }
+    @media(max-width:767px){
+        ._footer{
+            .db{
+                display: block !important;
+            }
+            .wrapper-430{
+                margin: 0px auto;
+                max-width: 430px;
+            }
+        }
+    }
+}

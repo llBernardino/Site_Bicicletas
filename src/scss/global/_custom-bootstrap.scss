@@ -1,0 +1,189 @@
+
+.bg-danger{
+    background-color: $vermelho !important;
+}
+.bg-primary{
+    background-color: $azul !important;
+}
+.bg-dark2{
+    background-color: $preto !important;
+}
+
+
+// buttons
+.btn{
+    font-weight: 500; 
+    font-style: normal;
+
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    box-shadow: none !important;
+    outline: none;
+    background-color: $azul;
+    border: none !important;
+    color: $branco;
+}
+.btn-primary{
+    background-color: $azul;
+    border: none !important;
+    transition: all .3s ease;
+    border-radius: 7px;
+    &:focus, &:active, &:hover{
+        border-radius: 7px;
+        box-shadow: none;
+        outline: none;
+        background-color: $azul;
+        border:  none !important;
+    }
+}
+
+.btn-danger{
+    background-color: $vermelho;
+    border-color: $vermelho;
+    transition: all .3s ease;
+    border-radius: 7px;
+    text-transform: none;
+    font-family: 'Lato', sans-serif;
+    &:focus, &:active, &:hover{
+        border-color: $vermelho;
+        box-shadow: none;
+        background-color: $vermelho;
+        color: $branco;
+        text-transform: none;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+
+.btn-danger-outline{
+    background-color: transparent;
+    border-color: $preto-2;
+    transition: all .3s ease;
+    border-radius: 7px;
+    text-transform: none;
+    &:focus, &:active, &:hover{
+        border: none;
+        box-shadow: none;
+        background-color: $vermelho;
+        color: $branco;
+        text-transform: none;
+    }
+}
+
+.btn-success{
+    background: $verde;
+    border: none !important;
+    transition: all .3s ease;
+    border-radius: 30px;
+    &:focus, &:active, &:hover{
+        background-color: $verde;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: none;
+        outline: none;
+        border:  none !important;
+        transition: all .3s ease;
+    }
+}
+
+.custom-select-form{
+    position: relative;
+    &::before{
+        content: '';
+        background: url('/wp-content/themes/PopdentsFranqueado/assets/images/arrow-bottom-form.svg') no-repeat center;
+        background-size: cover;
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        top: 50%;
+        margin-top: -3.6px;
+        right: 25px;
+        z-index: 9;
+    }
+    select.form-control, select.form-control:hover, select.form-control:active, select.form-control:focus{
+        height: 56px !important;
+        padding: 5px 25px;
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+    &::after{
+        content: '';
+        background: url('/wp-content/themes/PopdentsFranqueado/assets/images/arrow-bottom-form.svg') no-repeat center;
+        background-size: cover;
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        top: 50%;
+        margin-top: -3.6px;
+        right: 25px;
+        z-index: 9;
+    }
+}
+
+.form-control{
+    border-radius: 5px;
+    border: 1px solid $preto-2;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    font-family: 'Montserrat', sans-serif; 
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 16px;
+    color:$preto-2;
+    height: 50px;
+    padding: 0px 20px;
+    background: $branco;
+    &:focus, &:active, &:hover{
+        border: 1px solid $verde;
+        box-shadow: none;
+        outline: none;
+        color: $preto;
+    }
+    @include input-placeholder{
+        color:$cinza;
+    }
+}
+
+.modal-content{
+    padding: 40px 30px;
+}
+
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active{
+    outline: none;
+    border: none;
+    background-color: $branco;
+
+}
+.navbar span.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+    font-size: 18px;
+}
+
+
+@media(max-width: 991px){
+    .form-control, .form-control:hover, .form-control:focus, .form-control:active{
+        height: 40px;
+    }
+    .custom-select-form{
+        select.form-control, select.form-control:hover, select.form-control:active, select.form-control:focus{
+            height: 40px !important;
+        }
+    }
+    // buttons
+    .btn, .btn:focus, .btn:active, .btn:hover{
+        font-size: 14px;
+    }
+}
