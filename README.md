@@ -20,7 +20,7 @@ Aplicação simulando um site de Apresentação de uma empresa de <strong>Bicicl
 <br>
 <br>
 <p align = "center">
-  <img src ="Imagens/bem.jpeg" alt = "bem"/>
+  <img src ="img/bikes2.jpeg" alt = "bikes"/>
 </p>
 <br>
 
